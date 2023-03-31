@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    position: absolute;
+}
+.road{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 400px;
+}
+.car{
+    position: absolute;
+    top: 350px;
+    width: 530px;
+    left: -500px;
+    animation: defendermove 3s linear infinite;
+    z-index: 7;
+    animation-delay: 3s;
+}
+.traffic-light{
+    position: absolute;
+    height: 250px;
+    left: 800px;
+    top: 150px;
+}
+.car-2{
+    position: absolute;
+    width: 390px;
+    left: 0px;
+    top: 350px;
+    animation-name: bmwmove ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes defendermove{
+    from {left:-500px;}
+    to{left: 1600px;}
+    100% {top: 250px;}
+}
+@keyframes bmwmove{
+    from{left: -500px;}
+    to{left: 1600px;}
+}
